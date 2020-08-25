@@ -534,13 +534,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e436b573c19b043b1810d5c461e431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 10
+  timer: 5
   delay: 5
   velocidadePisca: 0.25
   SomAlarme: {fileID: 8300000, guid: ed8c3aa021bee7e498ee8abdde316a37, type: 3}
   SomRelogioTick:
-  - {fileID: 8300000, guid: 9e58b3c68e6e1a246989c4ef6d76db7c, type: 3}
-  - {fileID: 8300000, guid: 1a9ae9871425fe944beb5d560f0cdb54, type: 3}
+  - {fileID: 8300000, guid: 40c4c6cb5c1668841833e40f3c86f303, type: 3}
+  - {fileID: 8300000, guid: c1ab9a6cfbef1524497e5e540519c127, type: 3}
   TextoAcordar: {fileID: 38710053}
 --- !u!1 &519420028
 GameObject:

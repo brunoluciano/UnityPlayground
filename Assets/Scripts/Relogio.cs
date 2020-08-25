@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Relogio : MonoBehaviour
 {
@@ -61,11 +62,14 @@ public class Relogio : MonoBehaviour
             tempoTocandoAlarme += Time.deltaTime;
             TextoAcordar.enabled = true;
 
-            // if(tocandoAlarme) {
-            //     if(tempoTocandoAlarme >= SomAlarme.length) {
-            //         tocandoAlarme = false;
-            //     }
-            // }
+            if(tocandoAlarme) {
+                if(!ControlaAudio.instancia.isPlaying) {
+                    // if(tempoTocandoAlarme >= SomAlarme.length) {
+                    //     tocandoAlarme = false;
+                    // }
+                    tocaAlarme();
+                }
+            }
             
             if(tocandoAlarme == false) {
                 tocaAlarme();
@@ -77,12 +81,13 @@ public class Relogio : MonoBehaviour
             }
 
             if(Input.GetKeyUp(KeyCode.Space)) {
-                texto.color = corPadrao;
-                timer = timerAux;
-                delay = delayAux;
-                TextoAcordar.enabled = false;
-                texto.enabled = true;
-                tocandoAlarme = false;
+                SceneManager.LoadScene("AlarmeRelogio");
+                // texto.color = corPadrao;
+                // timer = timerAux;
+                // delay = delayAux;
+                // TextoAcordar.enabled = false;
+                // texto.enabled = true;
+                // tocandoAlarme = false;
             }
         }
 
