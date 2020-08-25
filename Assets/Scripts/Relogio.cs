@@ -20,7 +20,7 @@ public class Relogio : MonoBehaviour
     private float delayAux;
     private float contTime = 0.0f;
     private float intervaloTick = 1.0f;
-    private bool tocandoAlarme = false;
+    public bool tocandoAlarme = false;
     private int percorreVetorAudio = 0;
     private float tempoTocandoAlarme = 0.0f;
     
