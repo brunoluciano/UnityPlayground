@@ -178,8 +178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxOriginal: {fileID: 860132719662443582, guid: b7f6df53d928514499048aa288d32438, type: 3}
-  boxWidth: 50
-  boxHeight: 50
 --- !u!224 &600371719
 RectTransform:
   m_ObjectHideFlags: 0
@@ -252,7 +250,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
